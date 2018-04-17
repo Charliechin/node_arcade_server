@@ -15,7 +15,7 @@ app.get('/contra', function(req,res,next){
     exec = require('child_process').exec,
     child;
 
-  child = exec('sh /commands/contra.sh', function(error, stdout, stderr) {
+  child = exec('sh commands/contra.sh', function(error, stdout, stderr) {
     if(error) {
       return next(error);
     }
@@ -27,7 +27,7 @@ app.get('/simpsons', function(req,res,next){
     exec = require('child_process').exec,
     child;
 
-  child = exec('sh /commands/simpsons.sh', function(error, stdout, stderr) {
+  child = exec('sh commands/simpsons.sh', function(error, stdout, stderr) {
     if(error) {
       return next(error);
     }
@@ -39,7 +39,7 @@ app.get('/tetris', function(req,res,next){
     exec = require('child_process').exec,
     child;
 
-  child = exec('sh /commands/tetris.sh', function(error, stdout, stderr) {
+  child = exec('sh commands/tetris.sh', function(error, stdout, stderr) {
     if(error) {
       return next(error);
     }
@@ -51,7 +51,7 @@ app.get('/start', function(req,res,next){
     exec = require('child_process').exec,
     child;
 
-  child = exec('sh /commands/start.sh', function(error, stdout, stderr) {
+  child = exec('sh commands/start.sh', function(error, stdout, stderr) {
     if(error) {
       return next(error);
     }
@@ -63,7 +63,7 @@ app.get('/stop', function(req,res,next){
     exec = require('child_process').exec,
     child;
 
-  child = exec('sh /commands/stop.sh', function(error, stdout, stderr) {
+  child = exec('sh commands/stop.sh', function(error, stdout, stderr) {
     if(error) {
       return next(error);
     }
