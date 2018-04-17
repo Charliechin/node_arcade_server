@@ -5,8 +5,9 @@ var express = require('express'),
 
 app.use(express.static('./'));
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended : true}));
+// I had to comment this in order for the view template engine to work
+//app.use(bodyParser.json());
+//app.use(bodyParser.urlencoded({extended : true}));
 
 app.get('/index', function(req,res,next){
   res.render('index.html');
