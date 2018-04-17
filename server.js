@@ -3,11 +3,14 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     path = require('path');
 
+app.use(express.static('./'));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : true}));
 
 app.get('/index', function(req,res,next){
-  res.send("<a href='/start'> Start Emulator </a> <br/><br/>  <a href='/contra'> Launch Contra </a> <br/> <a href='/tetris'> Launch Tetris </a> <br/><br/> <a href='/stop'> Stop</a>  <br/><br/><a href='https://cloud.arest.io/piarcade/digital/2/1'> RED LED ON </a> <a href='https://cloud.arest.io/piarcade/digital/2/0'> RED LED OFF </a>  <br/><br/><a href='https://cloud.arest.io/piarcade/digital/3/1'> GREEN LED ON </a> <a href='https://cloud.arest.io/piarcade/digital/3/0'> GREEN LED OFF </a> <br/><br/><a href='https://cloud.arest.io/piarcade/digital/4/1'> BLUE LED ON </a> <a href='https://cloud.arest.io/piarcade/digital/4/0'> BLUE LED OFF </a> ");
+  res.render('index.html');
+  //res.send("<a href='/start'> Start Emulator </a> <br/><br/>  <a href='/contra'> Launch Contra </a> <br/> <a href='/tetris'> Launch Tetris </a> <br/><br/> <a href='/stop'> Stop</a>  <br/><br/><a href='https://cloud.arest.io/piarcade/digital/2/1'> RED LED ON </a> <a href='https://cloud.arest.io/piarcade/digital/2/0'> RED LED OFF </a>  <br/><br/><a href='https://cloud.arest.io/piarcade/digital/3/1'> GREEN LED ON </a> <a href='https://cloud.arest.io/piarcade/digital/3/0'> GREEN LED OFF </a> <br/><br/><a href='https://cloud.arest.io/piarcade/digital/4/1'> BLUE LED ON </a> <a href='https://cloud.arest.io/piarcade/digital/4/0'> BLUE LED OFF </a> ");
 });
 app.get('/contra', function(req,res,next){
   var sys = require('util'),
