@@ -1,3 +1,2 @@
-
 #!bin/bash
-killall retroarch
+killall retroarch || emulationstation
