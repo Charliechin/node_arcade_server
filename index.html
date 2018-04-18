@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <title>Express HTML</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body class="bg-gray">
+      <div class="col-xs-12 bg-header with-bottom-air"><h2 class="text-center section-title"> ARCADE </h2> </div>
+
+      <div class="container">
+        <h3 class="text-center"><span class="glyphicon glyphicon-star"></span> Starred Games <span class="glyphicon glyphicon-star"></span></h3>
+        <div class="favo-games">
+          <div class="row"> 
+            <div class="col-xs-4 col-sm-4"><a href="/tetris"><img src="screenshots/blood_bros.jpg" class="img-responsive rounded"><p class="text-center lead"><strong>Blood Bros.</strong></p></a></div>
+            <div class="col-xs-4 col-sm-4"><a href="/pang"><img src="screenshots/yoshi.jpg" class="img-responsive rounded"><p class="text-center lead"><strong>Super Pang!</strong></p></a></div>
+            <div class="col-xs-4 col-sm-4"><a href="/mortal-kombat-3"><img src="screenshots/loony.jpg" class="img-responsive rounded"><p class="text-center lead"><strong>Mortal Kombat 3</strong></p></a></div>
+          </div>
+          <div class="row"> 
+            <div class="col-xs-4 col-sm-4"><img src="screenshots/bomberman.jpeg" class="img-responsive rounded"><p class="text-center lead"><strong>Bomberman</strong></p></a></div>
+            <div class="col-xs-4 col-sm-4"><img src="screenshots/turrican.jpeg" class="img-responsive rounded"><p class="text-center lead"><strong>Super Turrican</strong></p></a></div>
+            <div class="col-xs-4 col-sm-4"><img src="screenshots/tmnt.png" class="img-responsive rounded"><p class="text-center lead"><strong>TMNT</strong></p></a></div>
+          </div>
+        </div> 
+
+        <h3 class="text-center"><span class="glyphicon glyphicon-time"></span> Recently Played <span class="glyphicon glyphicon-time"></span></h3>
+        <div class="favo-games">
+          <div class="row"> 
+            <div class="col-xs-4 col-sm-4"><img src="screenshots/tmnt.png" class="img-responsive rounded"><p class="text-center lead"><strong>TMNT</strong></p></div>
+            <div class="col-xs-4 col-sm-4"><img src="screenshots/turrican.jpeg" class="img-responsive rounded"><p class="text-center lead"><strong>Super Turrican</strong></p></div>
+            <div class="col-xs-4 col-sm-4"><img src="screenshots/loony.jpg" class="img-responsive rounded"><p class="text-center lead"><strong>Loony Tunes</strong></p></div>
+          </div>
+        </div> 
+      </div>
+
+      <!--Footer-->
+      <footer class="page-footer font-small blue pt-4 mt-4">
+
+        <!--Footer Links-->
+        <div class="container-fluid text-center text-md-left">
+          <div class="row">
+
+            <!--First column-->
+            <div class="col-md-6">
+              <h5 class="text-uppercase"></span> <span class="glyphicon glyphicon-wrench"></span> Quick Settings <span class="glyphicon glyphicon-wrench"></span></h5>
+              <p></p>
+            </div>
+            <!--/.First column-->
+
+            <!--Second column-->
+            <div class="col-md-6">
+              <ul class="list-inline">
+                <li>
+                  <a href="/volume-up"><span class="glyphicon glyphicon-volume-up"></span> Volume up</a>
+                </li>
+                <li>
+                  <a href="/volume-down"><span class="glyphicon glyphicon-volume-down"></span> Volume down</a>
+                </li>
+                <li>
+                  <a href="/mute"><span class="glyphicon glyphicon-volume-off"></span> Mute</a>
+                </li>
+                <li>
+                  <a href="/start"><span class="glyphicon glyphicon-play"></span> Start Emulation</a>
+                </li>
+                <li>
+                  <a href="/stop"><span class="glyphicon glyphicon-remove"></span> Stop Emulation</a>
+                </li>
+              </ul>
+            </div>
+            <!--/.Second column-->
+          </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <!--Copyright-->
+        <div class="footer-copyright py-3 text-center">
+        </div>
+        <!--/.Copyright-->
+
+      </footer>
+      <!--/.Footer-->
+  </body>
+  <style>
+.bg-gray{
+  background-color: #efefef;
+}
+    .bg-header{
+      background-color: #203a45;
+    }
+    .section-title {
+      color: white;
+    }
+    .with-bottom-air {
+      margin-bottom: 20px;
+    }
+    .favo-games {
+      background-color: white;
+      padding: 20px;
+    }
+    .rounded {
+      border-radius: 0.25rem !important
+    }
+
+
+
+  </style>
+</html>
