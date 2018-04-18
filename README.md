@@ -10,3 +10,8 @@ The actual routes that are currently working:
   - /stop
  
 In order for this server to work, the server has to have installed Retropie or retroarch and ssh access
+
+How to install:
+
+- git clone https://github.com/Charliechin/node_arcade_server.git
+- npm install
