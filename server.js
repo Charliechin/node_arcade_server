@@ -27,6 +27,18 @@ app.get('/pang', function(req,res,next){
     return res.status(200).send(stdout);
   });
 });
+app.get('/tmnt', function(req,res,next){
+  var sys = require('util'),
+  exec = require('child_process').exec,
+  child;
+
+  child = exec('sh commands/tmnt.sh', function(error, stdout, stderr) {
+    if(error) {
+      return next(error);
+    }
+    return res.status(200).send(stdout);
+  });
+});
 app.get('/mortal-kombat-3', function(req,res,next){
   var sys = require('util'),
   exec = require('child_process').exec,
